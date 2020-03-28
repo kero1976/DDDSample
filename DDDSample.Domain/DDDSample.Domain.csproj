@@ -42,28 +42,27 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ReadMe\Repositories\ISampleRepository.cs" />
+    <Compile Include="src\Entities\SampleEntity.cs" />
     <Compile Include="src\Repositories\ISampleRepository.cs" />
-    <Compile Include="Shared.cs" />
+    <Compile Include="src\Shared.cs" />
+    <Compile Include="src\ValueObjects\SampleValue.cs" />
+    <Compile Include="src\ValueObjects\ValueObject.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="ReadMe\Entities\ReadMe.txt" />
     <Content Include="ReadMe\Repositories\ReadMe.txt" />
     <Content Include="ReadMe\ReadMe.txt" />
-    <Content Include="src\Repositories\ReadMe.txt" />
+    <Content Include="ReadMe\ValueObjects\ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ReadMe\Exceptions\" />
     <Folder Include="ReadMe\Helpers\" />
     <Folder Include="ReadMe\Logics\" />
     <Folder Include="ReadMe\StaticValues\" />
-    <Folder Include="ReadMe\ValueObjects\" />
-    <Folder Include="src\Entities\" />
     <Folder Include="src\Exceptions\" />
     <Folder Include="src\Helpers\" />
     <Folder Include="src\Logics\" />
     <Folder Include="src\StaticValues\" />
-    <Folder Include="src\ValueObjects\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

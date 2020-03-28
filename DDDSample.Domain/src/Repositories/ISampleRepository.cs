@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using DDDSample.Domain.src.Entities;
 
-namespace DDDSample.Domain.Repositories
+namespace DDDSample.Domain.src.Repositories
 {
     public interface ISampleRepository
     {

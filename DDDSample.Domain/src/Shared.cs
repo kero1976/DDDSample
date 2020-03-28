@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DDDSample.Domain.Repositories
+namespace DDDSample.Domain.src
 {
-    public interface ISampleRepository
+    class Shared
     {
-        SampleEntity GetSample();
     }
 }
