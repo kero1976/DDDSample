@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="ProjectGroup" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>DDDSample.ProjectTemplate</Name>
+    <Description> C#でドメイン駆動開発を行うためのテンプレート3</Description>
+    <Icon>DDDSample.ProjectTemplate.ico</Icon>
+    <ProjectType>CSharp</ProjectType>
+    <LanguageTag>csharp</LanguageTag>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <SortOrder>1000</SortOrder>
+    <TemplateID>bbf1df02-11ae-4b03-bcd2-796fcc147fe6</TemplateID>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>DDDSample.ProjectTemplate</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <ProjectCollection>
+
+      <ProjectTemplateLink ProjectName="$projectname$.Domain">
+
+        DDDSample.Domain\MyTemplate.vstemplate
+
+      </ProjectTemplateLink>
+
+      <ProjectTemplateLink ProjectName="$projectname$.Infrastructure">
+
+        DDDSample.Infrastructure\MyTemplate.vstemplate
+
+      </ProjectTemplateLink>
+
+
+    </ProjectCollection>
+  </TemplateContent>
+</VSTemplate>

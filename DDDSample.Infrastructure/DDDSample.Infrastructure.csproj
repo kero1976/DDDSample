@@ -45,6 +45,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="src\Fake\Class1.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\DDDSample.Domain\DDDSample.Domain.csproj">
+      <Project>{97b2ddcf-cb5a-4e25-aa31-671f23f18f1f}</Project>
+      <Name>DDDSample.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ReadMe\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
