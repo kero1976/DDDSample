@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <VSTemplate Version="3.0.0" Type="ProjectGroup" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
   <TemplateData>
-    <Name>DDDSample.ProjectTemplate</Name>
-    <Description> C#でドメイン駆動開発を行うためのテンプレート3</Description>
+    <Name>DDDプロジェクトテンプレート</Name>
+    <Description> C#でドメイン駆動開発を行うためのテンプレート</Description>
     <Icon>DDDSample.ProjectTemplate.ico</Icon>
     <ProjectType>CSharp</ProjectType>
     <LanguageTag>csharp</LanguageTag>
@@ -16,13 +16,13 @@
   <TemplateContent>
     <ProjectCollection>
 
-      <ProjectTemplateLink ProjectName="$projectname$.Domain">
+      <ProjectTemplateLink ProjectName="$projectname$.Domain" CopyParameters="true">
 
         DDDSample.Domain\MyTemplate.vstemplate
 
       </ProjectTemplateLink>
 
-      <ProjectTemplateLink ProjectName="$projectname$.Infrastructure">
+      <ProjectTemplateLink ProjectName="$projectname$.Infrastructure" CopyParameters="true">
 
         DDDSample.Infrastructure\MyTemplate.vstemplate
 
