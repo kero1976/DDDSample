@@ -29,6 +29,12 @@
       </ProjectTemplateLink>
 
 
+      <ProjectTemplateLink ProjectName="$projectname$Test.Tests" CopyParameters="true">
+
+        DDDSampleTest.Tests\MyTemplate.vstemplate
+
+      </ProjectTemplateLink>
+      
     </ProjectCollection>
   </TemplateContent>
 </VSTemplate>

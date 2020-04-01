@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="src\Entities\SampleEntity.cs" />
+    <Compile Include="src\Helpers\Split.cs" />
     <Compile Include="src\Repositories\ISampleRepository.cs" />
     <Compile Include="src\Shared.cs" />
     <Compile Include="src\ValueObjects\SampleValue.cs" />
@@ -60,7 +61,6 @@
     <Folder Include="ReadMe\Logics\" />
     <Folder Include="ReadMe\StaticValues\" />
     <Folder Include="src\Exceptions\" />
-    <Folder Include="src\Helpers\" />
     <Folder Include="src\Logics\" />
     <Folder Include="src\StaticValues\" />
   </ItemGroup>

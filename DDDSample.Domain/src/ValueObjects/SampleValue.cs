@@ -10,7 +10,13 @@ namespace DDDSample.Domain.src.ValueObjects
     {
         protected override bool EqualsCore(SampleValue other)
         {
-            throw new NotImplementedException();
+            return this.Value == other.Value;
+        }
+        public string Value { get; }
+
+        public SampleValue(string value)
+        {
+            Value = value;
         }
     }
 }
