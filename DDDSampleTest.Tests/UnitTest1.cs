@@ -30,7 +30,19 @@ namespace DDDSampleTest.Tests
         [TestMethod]
         public void Test3()
         {
-            AssertEx.Throws<FormatException>(() => "A=B=C=D".FixedSplit(4, '=')).Message.Is("区切り文字が多い");
+            AssertEx.Throws<FormatException>(() => "A=B=C=D".FixedSplit(2, '=')).Message.Is("区切り文字が多い");
+        }
+
+        [TestMethod]
+        public void Test4()
+        {
+            "A=\"B = C\"=D".FixedSplit(2, '=').Count().Is(3);
+        }
+
+        [TestMethod]
+        public void Test5()
+        {
+            "A=\"B\"\" = C\"=D".FixedSplit(2, '=').Count().Is(3);
         }
     }
 }
